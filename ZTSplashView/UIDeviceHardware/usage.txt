@@ -1,0 +1,3 @@
+UIDeviceHardware *h=[[UIDeviceHardware alloc] init];
+[self setDeviceModel:[h platformString]];   
+[h release];

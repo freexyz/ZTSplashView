@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7020F25E1E2616C400F67190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F25D1E2616C400F67190 /* main.m */; };
+		7020F2611E2616C400F67190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2601E2616C400F67190 /* AppDelegate.m */; };
+		7020F2641E2616C400F67190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2631E2616C400F67190 /* ViewController.m */; };
+		7020F2671E2616C400F67190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2651E2616C400F67190 /* Main.storyboard */; };
+		7020F2691E2616C400F67190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2681E2616C400F67190 /* Assets.xcassets */; };
+		7020F2771E2616C500F67190 /* ZTSplashViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2761E2616C500F67190 /* ZTSplashViewTests.m */; };
+		7020F2821E2616C500F67190 /* ZTSplashViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2811E2616C500F67190 /* ZTSplashViewUITests.m */; };
+		7020F2961E26179300F67190 /* CBZRasterSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2911E26179300F67190 /* CBZRasterSplashView.m */; };
+		7020F2971E26179300F67190 /* CBZSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2931E26179300F67190 /* CBZSplashView.m */; };
+		7020F2981E26179300F67190 /* CBZVectorSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2951E26179300F67190 /* CBZVectorSplashView.m */; };
+		7020F29B1E2617AD00F67190 /* UIBezierPath+Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F29A1E2617AD00F67190 /* UIBezierPath+Shapes.m */; };
+		7020F29E1E2618AB00F67190 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F29D1E2618AB00F67190 /* UIColor+HexString.m */; };
+		7020F2A11E261C2800F67190 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7020F2A01E261C2800F67190 /* QuartzCore.framework */; };
+		7020F2A31E262ABF00F67190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7020F2A21E262ABF00F67190 /* Foundation.framework */; };
+		7020F2A51E262AC900F67190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7020F2A41E262AC900F67190 /* UIKit.framework */; };
+		7020F2A91E26623B00F67190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2A81E26623B00F67190 /* LaunchScreen.storyboard */; };
+		703CEB1C1E2CBBAB000E8629 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB1B1E2CBBAB000E8629 /* UIDeviceHardware.m */; };
+		703CEB1F1E2CE809000E8629 /* RootContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB1E1E2CE809000E8629 /* RootContainerViewController.m */; };
+		703CEB251E2CF693000E8629 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB241E2CF693000E8629 /* SplashViewController.m */; };
+		703CEB281E2CFE56000E8629 /* MenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */; };
+		703CEB2A1E2D00DD000E8629 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703CEB291E2D00DD000E8629 /* Menu.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7020F2731E2616C400F67190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7020F2511E2616C400F67190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7020F2581E2616C400F67190;
+			remoteInfo = ZTSplashView;
+		};
+		7020F27E1E2616C500F67190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7020F2511E2616C400F67190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7020F2581E2616C400F67190;
+			remoteInfo = ZTSplashView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7020F2591E2616C400F67190 /* ZTSplashView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTSplashView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020F25D1E2616C400F67190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7020F25F1E2616C400F67190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7020F2601E2616C400F67190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7020F2621E2616C400F67190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7020F2631E2616C400F67190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7020F2661E2616C400F67190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7020F2681E2616C400F67190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7020F26D1E2616C400F67190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020F2721E2616C400F67190 /* ZTSplashViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTSplashViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020F2761E2616C500F67190 /* ZTSplashViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTSplashViewTests.m; sourceTree = "<group>"; };
+		7020F2781E2616C500F67190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020F27D1E2616C500F67190 /* ZTSplashViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTSplashViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7020F2811E2616C500F67190 /* ZTSplashViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTSplashViewUITests.m; sourceTree = "<group>"; };
+		7020F2831E2616C500F67190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7020F2901E26179300F67190 /* CBZRasterSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBZRasterSplashView.h; path = CBZSplashView/CBZRasterSplashView.h; sourceTree = "<group>"; };
+		7020F2911E26179300F67190 /* CBZRasterSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBZRasterSplashView.m; path = CBZSplashView/CBZRasterSplashView.m; sourceTree = "<group>"; };
+		7020F2921E26179300F67190 /* CBZSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBZSplashView.h; path = CBZSplashView/CBZSplashView.h; sourceTree = "<group>"; };
+		7020F2931E26179300F67190 /* CBZSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBZSplashView.m; path = CBZSplashView/CBZSplashView.m; sourceTree = "<group>"; };
+		7020F2941E26179300F67190 /* CBZVectorSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBZVectorSplashView.h; path = CBZSplashView/CBZVectorSplashView.h; sourceTree = "<group>"; };
+		7020F2951E26179300F67190 /* CBZVectorSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBZVectorSplashView.m; path = CBZSplashView/CBZVectorSplashView.m; sourceTree = "<group>"; };
+		7020F2991E2617AD00F67190 /* UIBezierPath+Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Shapes.h"; sourceTree = "<group>"; };
+		7020F29A1E2617AD00F67190 /* UIBezierPath+Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Shapes.m"; sourceTree = "<group>"; };
+		7020F29C1E2618AB00F67190 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		7020F29D1E2618AB00F67190 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		7020F2A01E261C2800F67190 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7020F2A21E262ABF00F67190 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7020F2A41E262AC900F67190 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7020F2A81E26623B00F67190 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		703CEB1A1E2CBBAB000E8629 /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = UIDeviceHardware/UIDeviceHardware.h; sourceTree = "<group>"; };
+		703CEB1B1E2CBBAB000E8629 /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = UIDeviceHardware/UIDeviceHardware.m; sourceTree = "<group>"; };
+		703CEB1D1E2CE809000E8629 /* RootContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootContainerViewController.h; sourceTree = "<group>"; };
+		703CEB1E1E2CE809000E8629 /* RootContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootContainerViewController.m; sourceTree = "<group>"; };
+		703CEB201E2CE85F000E8629 /* DbgMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbgMsg.h; sourceTree = "<group>"; };
+		703CEB231E2CF693000E8629 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		703CEB241E2CF693000E8629 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		703CEB261E2CFE56000E8629 /* MenuNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuNavigationViewController.h; sourceTree = "<group>"; };
+		703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuNavigationViewController.m; sourceTree = "<group>"; };
+		703CEB291E2D00DD000E8629 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7020F2561E2616C400F67190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020F2A51E262AC900F67190 /* UIKit.framework in Frameworks */,
+				7020F2A31E262ABF00F67190 /* Foundation.framework in Frameworks */,
+				7020F2A11E261C2800F67190 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F26F1E2616C400F67190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F27A1E2616C500F67190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7020F2501E2616C400F67190 = {
+			isa = PBXGroup;
+			children = (
+				7020F25B1E2616C400F67190 /* ZTSplashView */,
+				7020F2751E2616C500F67190 /* ZTSplashViewTests */,
+				7020F2801E2616C500F67190 /* ZTSplashViewUITests */,
+				7020F25A1E2616C400F67190 /* Products */,
+				7020F29F1E261C2800F67190 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7020F25A1E2616C400F67190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7020F2591E2616C400F67190 /* ZTSplashView.app */,
+				7020F2721E2616C400F67190 /* ZTSplashViewTests.xctest */,
+				7020F27D1E2616C500F67190 /* ZTSplashViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7020F25B1E2616C400F67190 /* ZTSplashView */ = {
+			isa = PBXGroup;
+			children = (
+				703CEB211E2CF4EE000E8629 /* SplashScreen */,
+				703CEB191E2CBB98000E8629 /* UIDeviceHardware */,
+				703CEB221E2CF51D000E8629 /* Library */,
+				7020F25F1E2616C400F67190 /* AppDelegate.h */,
+				7020F2601E2616C400F67190 /* AppDelegate.m */,
+				703CEB1D1E2CE809000E8629 /* RootContainerViewController.h */,
+				703CEB1E1E2CE809000E8629 /* RootContainerViewController.m */,
+				703CEB261E2CFE56000E8629 /* MenuNavigationViewController.h */,
+				703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */,
+				7020F2621E2616C400F67190 /* ViewController.h */,
+				7020F2631E2616C400F67190 /* ViewController.m */,
+				7020F2681E2616C400F67190 /* Assets.xcassets */,
+				7020F2651E2616C400F67190 /* Main.storyboard */,
+				703CEB291E2D00DD000E8629 /* Menu.storyboard */,
+				7020F2A81E26623B00F67190 /* LaunchScreen.storyboard */,
+				7020F26D1E2616C400F67190 /* Info.plist */,
+				7020F25C1E2616C400F67190 /* Supporting Files */,
+			);
+			path = ZTSplashView;
+			sourceTree = "<group>";
+		};
+		7020F25C1E2616C400F67190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7020F25D1E2616C400F67190 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7020F2751E2616C500F67190 /* ZTSplashViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7020F2761E2616C500F67190 /* ZTSplashViewTests.m */,
+				7020F2781E2616C500F67190 /* Info.plist */,
+			);
+			path = ZTSplashViewTests;
+			sourceTree = "<group>";
+		};
+		7020F2801E2616C500F67190 /* ZTSplashViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7020F2811E2616C500F67190 /* ZTSplashViewUITests.m */,
+				7020F2831E2616C500F67190 /* Info.plist */,
+			);
+			path = ZTSplashViewUITests;
+			sourceTree = "<group>";
+		};
+		7020F28F1E26175F00F67190 /* CBZSplashView */ = {
+			isa = PBXGroup;
+			children = (
+				7020F2901E26179300F67190 /* CBZRasterSplashView.h */,
+				7020F2911E26179300F67190 /* CBZRasterSplashView.m */,
+				7020F2941E26179300F67190 /* CBZVectorSplashView.h */,
+				7020F2951E26179300F67190 /* CBZVectorSplashView.m */,
+				7020F2921E26179300F67190 /* CBZSplashView.h */,
+				7020F2931E26179300F67190 /* CBZSplashView.m */,
+			);
+			name = CBZSplashView;
+			sourceTree = "<group>";
+		};
+		7020F29F1E261C2800F67190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7020F2A41E262AC900F67190 /* UIKit.framework */,
+				7020F2A21E262ABF00F67190 /* Foundation.framework */,
+				7020F2A01E261C2800F67190 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		703CEB191E2CBB98000E8629 /* UIDeviceHardware */ = {
+			isa = PBXGroup;
+			children = (
+				703CEB1A1E2CBBAB000E8629 /* UIDeviceHardware.h */,
+				703CEB1B1E2CBBAB000E8629 /* UIDeviceHardware.m */,
+			);
+			name = UIDeviceHardware;
+			sourceTree = "<group>";
+		};
+		703CEB211E2CF4EE000E8629 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7020F28F1E26175F00F67190 /* CBZSplashView */,
+				7020F2991E2617AD00F67190 /* UIBezierPath+Shapes.h */,
+				7020F29A1E2617AD00F67190 /* UIBezierPath+Shapes.m */,
+				703CEB231E2CF693000E8629 /* SplashViewController.h */,
+				703CEB241E2CF693000E8629 /* SplashViewController.m */,
+			);
+			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		703CEB221E2CF51D000E8629 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				703CEB201E2CE85F000E8629 /* DbgMsg.h */,
+				7020F29C1E2618AB00F67190 /* UIColor+HexString.h */,
+				7020F29D1E2618AB00F67190 /* UIColor+HexString.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7020F2581E2616C400F67190 /* ZTSplashView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020F2861E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashView" */;
+			buildPhases = (
+				7020F2551E2616C400F67190 /* Sources */,
+				7020F2561E2616C400F67190 /* Frameworks */,
+				7020F2571E2616C400F67190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTSplashView;
+			productName = ZTSplashView;
+			productReference = 7020F2591E2616C400F67190 /* ZTSplashView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7020F2711E2616C400F67190 /* ZTSplashViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020F2891E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashViewTests" */;
+			buildPhases = (
+				7020F26E1E2616C400F67190 /* Sources */,
+				7020F26F1E2616C400F67190 /* Frameworks */,
+				7020F2701E2616C400F67190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7020F2741E2616C400F67190 /* PBXTargetDependency */,
+			);
+			name = ZTSplashViewTests;
+			productName = ZTSplashViewTests;
+			productReference = 7020F2721E2616C400F67190 /* ZTSplashViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7020F27C1E2616C500F67190 /* ZTSplashViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7020F28C1E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashViewUITests" */;
+			buildPhases = (
+				7020F2791E2616C500F67190 /* Sources */,
+				7020F27A1E2616C500F67190 /* Frameworks */,
+				7020F27B1E2616C500F67190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7020F27F1E2616C500F67190 /* PBXTargetDependency */,
+			);
+			name = ZTSplashViewUITests;
+			productName = ZTSplashViewUITests;
+			productReference = 7020F27D1E2616C500F67190 /* ZTSplashViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7020F2511E2616C400F67190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zealabs;
+				TargetAttributes = {
+					7020F2581E2616C400F67190 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4M8S7GUF3Y;
+						ProvisioningStyle = Automatic;
+					};
+					7020F2711E2616C400F67190 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4M8S7GUF3Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7020F2581E2616C400F67190;
+					};
+					7020F27C1E2616C500F67190 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4M8S7GUF3Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7020F2581E2616C400F67190;
+					};
+				};
+			};
+			buildConfigurationList = 7020F2541E2616C400F67190 /* Build configuration list for PBXProject "ZTSplashView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7020F2501E2616C400F67190;
+			productRefGroup = 7020F25A1E2616C400F67190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7020F2581E2616C400F67190 /* ZTSplashView */,
+				7020F2711E2616C400F67190 /* ZTSplashViewTests */,
+				7020F27C1E2616C500F67190 /* ZTSplashViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7020F2571E2616C400F67190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020F2A91E26623B00F67190 /* LaunchScreen.storyboard in Resources */,
+				7020F2691E2616C400F67190 /* Assets.xcassets in Resources */,
+				7020F2671E2616C400F67190 /* Main.storyboard in Resources */,
+				703CEB2A1E2D00DD000E8629 /* Menu.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F2701E2616C400F67190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F27B1E2616C500F67190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7020F2551E2616C400F67190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020F2641E2616C400F67190 /* ViewController.m in Sources */,
+				7020F2611E2616C400F67190 /* AppDelegate.m in Sources */,
+				703CEB1F1E2CE809000E8629 /* RootContainerViewController.m in Sources */,
+				7020F29E1E2618AB00F67190 /* UIColor+HexString.m in Sources */,
+				703CEB1C1E2CBBAB000E8629 /* UIDeviceHardware.m in Sources */,
+				703CEB281E2CFE56000E8629 /* MenuNavigationViewController.m in Sources */,
+				7020F2981E26179300F67190 /* CBZVectorSplashView.m in Sources */,
+				703CEB251E2CF693000E8629 /* SplashViewController.m in Sources */,
+				7020F29B1E2617AD00F67190 /* UIBezierPath+Shapes.m in Sources */,
+				7020F2971E26179300F67190 /* CBZSplashView.m in Sources */,
+				7020F2961E26179300F67190 /* CBZRasterSplashView.m in Sources */,
+				7020F25E1E2616C400F67190 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F26E1E2616C400F67190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020F2771E2616C500F67190 /* ZTSplashViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7020F2791E2616C500F67190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7020F2821E2616C500F67190 /* ZTSplashViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7020F2741E2616C400F67190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7020F2581E2616C400F67190 /* ZTSplashView */;
+			targetProxy = 7020F2731E2616C400F67190 /* PBXContainerItemProxy */;
+		};
+		7020F27F1E2616C500F67190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7020F2581E2616C400F67190 /* ZTSplashView */;
+			targetProxy = 7020F27E1E2616C500F67190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7020F2651E2616C400F67190 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7020F2661E2616C400F67190 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7020F2841E2616C500F67190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7020F2851E2616C500F67190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7020F2871E2616C500F67190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7020F2881E2616C500F67190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7020F28A1E2616C500F67190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTSplashView.app/ZTSplashView";
+			};
+			name = Debug;
+		};
+		7020F28B1E2616C500F67190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTSplashView.app/ZTSplashView";
+			};
+			name = Release;
+		};
+		7020F28D1E2616C500F67190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZTSplashView;
+			};
+			name = Debug;
+		};
+		7020F28E1E2616C500F67190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4M8S7GUF3Y;
+				INFOPLIST_FILE = ZTSplashViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ztk.ZTSplashViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZTSplashView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7020F2541E2616C400F67190 /* Build configuration list for PBXProject "ZTSplashView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020F2841E2616C500F67190 /* Debug */,
+				7020F2851E2616C500F67190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020F2861E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020F2871E2616C500F67190 /* Debug */,
+				7020F2881E2616C500F67190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020F2891E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020F28A1E2616C500F67190 /* Debug */,
+				7020F28B1E2616C500F67190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7020F28C1E2616C500F67190 /* Build configuration list for PBXNativeTarget "ZTSplashViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7020F28D1E2616C500F67190 /* Debug */,
+				7020F28E1E2616C500F67190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7020F2511E2616C400F67190 /* Project object */;
+}
