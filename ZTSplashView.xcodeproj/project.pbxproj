@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7020F25E1E2616C400F67190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F25D1E2616C400F67190 /* main.m */; };
 		7020F2611E2616C400F67190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2601E2616C400F67190 /* AppDelegate.m */; };
-		7020F2641E2616C400F67190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2631E2616C400F67190 /* ViewController.m */; };
 		7020F2671E2616C400F67190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2651E2616C400F67190 /* Main.storyboard */; };
 		7020F2691E2616C400F67190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2681E2616C400F67190 /* Assets.xcassets */; };
 		7020F2771E2616C500F67190 /* ZTSplashViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2761E2616C500F67190 /* ZTSplashViewTests.m */; };
@@ -28,6 +27,8 @@
 		703CEB251E2CF693000E8629 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB241E2CF693000E8629 /* SplashViewController.m */; };
 		703CEB281E2CFE56000E8629 /* MenuNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */; };
 		703CEB2A1E2D00DD000E8629 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703CEB291E2D00DD000E8629 /* Menu.storyboard */; };
+		708E642B1E2D54ED00A81F91 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708E642A1E2D54ED00A81F91 /* MapViewController.m */; };
+		708E642D1E2D69EC00A81F91 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708E642C1E2D69EC00A81F91 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,6 @@
 		7020F25D1E2616C400F67190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7020F25F1E2616C400F67190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7020F2601E2616C400F67190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7020F2621E2616C400F67190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7020F2631E2616C400F67190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7020F2661E2616C400F67190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7020F2681E2616C400F67190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7020F26D1E2616C400F67190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +86,9 @@
 		703CEB261E2CFE56000E8629 /* MenuNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuNavigationViewController.h; sourceTree = "<group>"; };
 		703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuNavigationViewController.m; sourceTree = "<group>"; };
 		703CEB291E2D00DD000E8629 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		708E64291E2D54ED00A81F91 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		708E642A1E2D54ED00A81F91 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		708E642C1E2D69EC00A81F91 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708E642D1E2D69EC00A81F91 /* MapKit.framework in Frameworks */,
 				7020F2A51E262AC900F67190 /* UIKit.framework in Frameworks */,
 				7020F2A31E262ABF00F67190 /* Foundation.framework in Frameworks */,
 				7020F2A11E261C2800F67190 /* QuartzCore.framework in Frameworks */,
@@ -150,8 +153,8 @@
 				703CEB1E1E2CE809000E8629 /* RootContainerViewController.m */,
 				703CEB261E2CFE56000E8629 /* MenuNavigationViewController.h */,
 				703CEB271E2CFE56000E8629 /* MenuNavigationViewController.m */,
-				7020F2621E2616C400F67190 /* ViewController.h */,
-				7020F2631E2616C400F67190 /* ViewController.m */,
+				708E64291E2D54ED00A81F91 /* MapViewController.h */,
+				708E642A1E2D54ED00A81F91 /* MapViewController.m */,
 				7020F2681E2616C400F67190 /* Assets.xcassets */,
 				7020F2651E2616C400F67190 /* Main.storyboard */,
 				703CEB291E2D00DD000E8629 /* Menu.storyboard */,
@@ -204,6 +207,7 @@
 		7020F29F1E261C2800F67190 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				708E642C1E2D69EC00A81F91 /* MapKit.framework */,
 				7020F2A41E262AC900F67190 /* UIKit.framework */,
 				7020F2A21E262ABF00F67190 /* Foundation.framework */,
 				7020F2A01E261C2800F67190 /* QuartzCore.framework */,
@@ -379,13 +383,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7020F2641E2616C400F67190 /* ViewController.m in Sources */,
 				7020F2611E2616C400F67190 /* AppDelegate.m in Sources */,
 				703CEB1F1E2CE809000E8629 /* RootContainerViewController.m in Sources */,
 				7020F29E1E2618AB00F67190 /* UIColor+HexString.m in Sources */,
 				703CEB1C1E2CBBAB000E8629 /* UIDeviceHardware.m in Sources */,
 				703CEB281E2CFE56000E8629 /* MenuNavigationViewController.m in Sources */,
 				7020F2981E26179300F67190 /* CBZVectorSplashView.m in Sources */,
+				708E642B1E2D54ED00A81F91 /* MapViewController.m in Sources */,
 				703CEB251E2CF693000E8629 /* SplashViewController.m in Sources */,
 				7020F29B1E2617AD00F67190 /* UIBezierPath+Shapes.m in Sources */,
 				7020F2971E26179300F67190 /* CBZSplashView.m in Sources */,

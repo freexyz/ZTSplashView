@@ -48,6 +48,20 @@
 /*
  ******************************************************************************
  *
+ * local variables
+ *
+ ******************************************************************************
+ */
+static NSString * const kTwitterIcon = @"twitterIcon";
+static NSString * const kSnapchatIcon = @"snapchatIcon";
+
+static NSString * const kTwitterColor = @"4099FF";
+static NSString * const kSnapchatColor = @"FFCC00";
+
+
+/*
+ ******************************************************************************
+ *
  * @interface
  *
  ******************************************************************************
@@ -83,15 +97,39 @@
 
 - (instancetype)initTtileViewFileName:(NSString *)string
 {
+    _dmsg(@"initTtileViewFileName:");
 //    [super initWithNibName:nil bundle:nil];
 
 //    [self.view addSubview:tileGridView];
 //    tileGridView.frame = [self.view bounds];
 
+
+
+    // Launch screen animation
+    __unused UIImage    *icon       = [UIImage imageNamed:@"twitterIcon"];
+    UIBezierPath        *bezier     = [UIBezierPath twitterShape];
+    UIColor             *color      = [UIColor colorWithHexString:kTwitterColor];
+    CBZSplashView       *splashView = [CBZSplashView splashViewWithBezierPath:bezier backgroundColor:color];
+
+    [splashView setAnimationDuration:1.8];
+
+    [self.view addSubview:splashView];
+    _splashView = splashView;
+
+    // Override point for customization after application launch.
+    [self delay:1.0 closure: ^{
+        [_splashView startAnimation];
+    }];
+
     return self;
 }
 
+- (void)awakeFromNib
+{
+    _dmsg(@"awakeFromNib");
+    [super awakeFromNib];
 
+}
 
 /*---------------------------------------------------------------------------*/
 #pragma mark -
@@ -100,6 +138,16 @@
 {
     _dmsg(@"prefersStatusBarHidden");
     return YES;
+}
+
+
+/*---------------------------------------------------------------------------*/
+#pragma mark -
+/*---------------------------------------------------------------------------*/
+- (void)delay:(double)delay closure:(void (^)())callback
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * (double)NSEC_PER_SEC)), dispatch_get_main_queue(), callback);
+
 }
 
 

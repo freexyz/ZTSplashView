@@ -110,10 +110,16 @@
 /*---------------------------------------------------------------------------*/
 - (BOOL)prefersStatusBarHidden
 {
-    _dmsg(@"prefersStatusBarHidden");
-
-
-    return YES;
+    if ([_rootViewController isKindOfClass:[SplashViewController class]]) {
+        _dmsg(@"prefersStatusBarHidden -> YES");
+        return YES;
+    } else if ([_rootViewController isKindOfClass:[MenuNavigationViewController class]]) {
+        _dmsg(@"prefersStatusBarHidden -> NO");
+        return NO;
+    } else {
+        _dmsg(@"prefersStatusBarHidden -> YES");
+        return YES;
+    }
 }
 
 
@@ -126,17 +132,23 @@
 
 }
 
+
+/*---------------------------------------------------------------------------*/
+#pragma mark -
+/*---------------------------------------------------------------------------*/
 - (void)showSplashViewController
 {
     [self showSplashViewControllerNoPing];
 
-    [self delay:3.00 closure:^{ [self showMenuNavigationViewController]; }];
+    [self delay:3.00 closure:^{
+        [self showMenuNavigationViewController];
+    }];
 }
 
 // Does not transition to any other UIViewControllers, SplashViewController only
 - (void)showSplashViewControllerNoPing
 {
-    if (![_rootViewController isKindOfClass:[SplashViewController class]]) {
+    if ([_rootViewController isKindOfClass:[SplashViewController class]]) {
         return;
     }
 
@@ -159,7 +171,7 @@
 // Displays the MapViewController
 - (void)showMenuNavigationViewController
 {
-    if (![_rootViewController isKindOfClass:[MenuNavigationViewController class]]) {
+    if ([_rootViewController isKindOfClass:[MenuNavigationViewController class]]) {
         return;
     }
 
@@ -172,20 +184,22 @@
     [self addChildViewController:nav];
 
 
-    UIViewController *rootViewController;
-    if (rootViewController == _rootViewController) {
+    UIViewController *rootViewController = _rootViewController;
+    if (rootViewController != nil) {
         _rootViewController = nav;
         [rootViewController willMoveToParentViewController:nil];
-/*
-    transition(from: rootViewController, to: nav, duration: 0.55, options: [.transitionCrossDissolve, .curveEaseOut], animations: { () -> Void in
-                            
-                        }, completion: { _ in
-                            nav.didMove(toParentViewController: self)
-                            rootViewController.removeFromParentViewController()
-                            rootViewController.didMove(toParentViewController: nil)
-                        })
-*/
- 
+
+        [self transitionFromViewController:rootViewController
+                          toViewController:nav
+                                  duration:0.5
+                                   options:UIViewAnimationOptionTransitionCrossDissolve
+                                animations:^{ }
+                                completion:^(BOOL finished){
+                                    [nav didMoveToParentViewController:self];
+                                    [rootViewController removeFromParentViewController];
+                                    [rootViewController didMoveToParentViewController:nil];
+                                }];
+
     } else {
         rootViewController = nav;
         [self.view addSubview:nav.view];
