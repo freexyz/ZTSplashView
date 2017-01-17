@@ -49,20 +49,23 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="gDs-9w-AeQ"/>
                                     <barButtonItem title="Item" style="plain" id="V85-mR-6eo">
                                         <view key="customView" contentMode="scaleToFill" id="8ef-cs-UKw">
-                                            <rect key="frame" x="27" y="0.0" width="320" height="80"/>
+                                            <rect key="frame" x="-1" y="0.0" width="376" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4o-2j-DfG">
-                                                    <rect key="frame" x="301" y="4.5" width="11" height="20.5"/>
+                                                    <rect key="frame" x="357" y="4.5" width="11" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WyK-Dp-lXC">
-                                                    <rect key="frame" x="6" y="25" width="308" height="31"/>
+                                                    <rect key="frame" x="6" y="25" width="364" height="31"/>
                                                     <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="7Bf-lg-PZm" eventType="valueChanged" id="jJN-eD-3t2"/>
+                                                    </connections>
                                                 </slider>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqb-X4-dOk">
                                                     <rect key="frame" x="8" y="4" width="11.5" height="21"/>

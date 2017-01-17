@@ -66,10 +66,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     _dmsg(@"application:didFinishLaunchingWithOptions:%@", launchOptions);
-    _dmsg(@"window bounds = %@", NSStringFromCGRect(self.window.bounds));
-    _dmsg(@"status bar    = %@", NSStringFromCGRect([[UIApplication sharedApplication]statusBarFrame]));
-    _dmsg(@"work space    = %@", NSStringFromCGRect([UIScreen mainScreen].applicationFrame));
-    _dmsg(@"window        = %@", NSStringFromCGRect([[UIScreen mainScreen] bounds]));
+    _dmsg(@"\
+          \n window bounds = %@\
+          \n status bar    = %@\
+          \n work space    = %@\
+          \n window        = %@",
+        NSStringFromCGRect(self.window.bounds),
+        NSStringFromCGRect([[UIApplication sharedApplication]statusBarFrame]),
+        NSStringFromCGRect([UIScreen mainScreen].applicationFrame),
+        NSStringFromCGRect([[UIScreen mainScreen] bounds]));
 
     //取得當前狀態
     UIDevice *device = [UIDevice currentDevice];

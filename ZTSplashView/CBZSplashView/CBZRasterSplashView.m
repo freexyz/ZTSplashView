@@ -46,23 +46,31 @@
     }
     
     CGFloat shrinkDuration = self.animationDuration * 0.3;
-    CGFloat growDuration = self.animationDuration * 0.7;
+    CGFloat growDuration   = self.animationDuration * 0.7;
     
-    [UIView animateWithDuration:shrinkDuration delay:0 usingSpringWithDamping:0.7f initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        CGAffineTransform scaleTransform = CGAffineTransformMakeScale(0.75, 0.75);
-        weakSelf.iconImageView.transform = scaleTransform;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:growDuration animations:^{
-            CGAffineTransform scaleTransform = CGAffineTransformMakeScale(20, 20);
-            weakSelf.iconImageView.transform = scaleTransform;
-            weakSelf.alpha = 0;
-        } completion:^(BOOL finished) {
-            [weakSelf removeFromSuperview];
-            if (completionHandler) {
-                completionHandler();
-            }
-        }];
-    }];
+    [UIView animateWithDuration:shrinkDuration
+                          delay:0
+         usingSpringWithDamping:0.7f
+          initialSpringVelocity:10
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         CGAffineTransform scaleTransform = CGAffineTransformMakeScale(0.75, 0.75);
+                         weakSelf.iconImageView.transform = scaleTransform;
+
+                     } completion:^(BOOL finished) {
+                         [UIView animateWithDuration:growDuration
+                                          animations:^{
+                                              CGAffineTransform scaleTransform = CGAffineTransformMakeScale(20, 20);
+                                              weakSelf.iconImageView.transform = scaleTransform;
+                                              weakSelf.alpha = 0;
+
+                                          } completion:^(BOOL finished) {
+                                              [weakSelf removeFromSuperview];
+                                              if (completionHandler) {
+                                                  completionHandler();
+                                              }
+                                          }];
+                     }];
 }
 
 @end

@@ -24,11 +24,13 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
+@property (retain, nonatomic) IBOutlet UISlider *slider;
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *containerBarButtonItem;
+@property (retain, nonatomic) IBOutlet MKMapView *mapView;
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UISlider *slider;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *containerBarButtonItem;
+@property (retain, nonatomic) CLLocationManager *locationManager;
 
+- (IBAction)valueChanged:(UISlider *)sender;
 @end

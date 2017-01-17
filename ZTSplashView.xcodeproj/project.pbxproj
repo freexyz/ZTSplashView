@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701A2DA11E2E278300528FF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A2DA01E2E278300528FF7 /* CoreLocation.framework */; };
+		701A2DA31E2E2B1400528FF7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701A2DA21E2E2B1400528FF7 /* CoreText.framework */; };
 		7020F25E1E2616C400F67190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F25D1E2616C400F67190 /* main.m */; };
 		7020F2611E2616C400F67190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7020F2601E2616C400F67190 /* AppDelegate.m */; };
 		7020F2671E2616C400F67190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7020F2651E2616C400F67190 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701A2DA01E2E278300528FF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		701A2DA21E2E2B1400528FF7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		7020F2591E2616C400F67190 /* ZTSplashView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTSplashView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7020F25D1E2616C400F67190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7020F25F1E2616C400F67190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701A2DA31E2E2B1400528FF7 /* CoreText.framework in Frameworks */,
+				701A2DA11E2E278300528FF7 /* CoreLocation.framework in Frameworks */,
 				708E642D1E2D69EC00A81F91 /* MapKit.framework in Frameworks */,
 				7020F2A51E262AC900F67190 /* UIKit.framework in Frameworks */,
 				7020F2A31E262ABF00F67190 /* Foundation.framework in Frameworks */,
@@ -207,6 +213,8 @@
 		7020F29F1E261C2800F67190 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				701A2DA21E2E2B1400528FF7 /* CoreText.framework */,
+				701A2DA01E2E278300528FF7 /* CoreLocation.framework */,
 				708E642C1E2D69EC00A81F91 /* MapKit.framework */,
 				7020F2A41E262AC900F67190 /* UIKit.framework */,
 				7020F2A21E262ABF00F67190 /* Foundation.framework */,
