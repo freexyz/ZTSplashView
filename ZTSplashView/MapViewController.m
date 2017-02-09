@@ -178,6 +178,11 @@
     _dmsg(@"目前面對的方位:%f", newHeading.magneticHeading);
 }
 
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    _dmsg(@"locationManager:didUpdateHeading:%@", error);
+}
+
 
 /*---------------------------------------------------------------------------*/
 #pragma mark - MKMapViewDelegate
